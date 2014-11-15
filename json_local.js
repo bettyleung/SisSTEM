@@ -27,7 +27,8 @@ $("#submitbutton").click(function () {
     }
     //return false;
 
-    window.location = "viewposts.html";
+   // window.location = "viewposts.html";
+   window.location = "DwnjTNuvVt/index.html";
 });
 
 /*
