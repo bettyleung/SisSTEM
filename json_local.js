@@ -14,7 +14,7 @@ $("#submitbutton").click(function () {
         var stories;
         try{
             stories = JSON.parse(localStorage.getItem("stories"));
-            if (typeof stories !== "object" ) {
+            if (!stories ) {
              stories = []; 
             }
         } catch(err) {
@@ -29,7 +29,7 @@ $("#submitbutton").click(function () {
     //return false;
 
    // window.location = "viewposts.html";
-  // window.location = "DwnjTNuvVt/index.html";
+   window.location = "DwnjTNuvVt/index.html";
 });
 
 /*
