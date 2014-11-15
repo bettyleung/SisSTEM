@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>My Story</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap-landing-page/gh-pages/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="actionStory.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="pstyle.css">
+
+
+
+
+  </head>
+
+
+  <body>
+    <h1> SisSTEM!</h1>
+
+    <form name="submission" action="viewposts.html">
+
+    <fieldset>
+        <input type="email" class="form-control-2" id="emailid" placeholder="Enter email" name="emailname" >
+    </fieldset>
+    <fieldset>
+        <input type="username" class="form-control-2" id="usernameid" placeholder="Enter username" name="usernamename" >
+    </fieldset>
+
+    <fieldset>
+        <legend>What's your story?</legend>
+        <textarea name="StorySub" id="Story" rows="15" cols="80" placeholder="Type here . . ." name="storyname"></textarea>
+    </fieldset>
+        <input type="submit" name="submitname" id="submitbutton">
+  </form>
+
+    <script>
+      debugger;
+      $("#submitbutton").click(function(event) {
+        debugger;
+        event.preventDefault();
+        var nameValue = document.getElementById("usernameid").value;
+        var emailValue = document.getElementById("emailid").value;
+        var storyValue = document.getElementById("Story").value;
+        myArr = emailValue + " " + storyValue;
+        localStorage.setItem(nameValue,myArr);
+        
+      });
+    </script>
+
+
+
+
+
+  </body>
+</html>
+
