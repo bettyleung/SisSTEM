@@ -1,6 +1,7 @@
+$(document).ready(function () {
 
-
-function saveLocal(){
+$("#saveLocal").click(function () {
+    alert("saved!");
     if (window.localStorage) {
         var story = {};
         story.datae = new Date();
@@ -10,13 +11,13 @@ function saveLocal(){
         stories.push(story);
 
         localStorage.setItem("stories",stories); // maybe stringify 
-        alert("The data has been stored successfully.");
+        alert("The data has been stored successfully!");
     } else {
         alert("Your Browser does not support LocalStorage.");
     }
-}
+});
 
-function readLocal(){
+$("#readLocal").click(function () {
     if (window.localStorage) {
         //get the highscores object
         var scores = localStorage.getItem("highscores");
@@ -26,3 +27,6 @@ function readLocal(){
         }
     }
 }
+
+});
+});
