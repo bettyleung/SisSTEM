@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Open Sans Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Open Sans Condensed",Helvetica,Arial,sans-serif;
     font-weight: 500;
 	text-transform:uppercase;
 }
@@ -27,7 +27,7 @@ h6 {
 }
 
 p{
-	font-family: "Quicksand",Helvetica,Arial,sans-serif;
+	font-family:"Quicksand",Helvetica,Arial,sans-serif;
 	text-tranform:none;
 }
 
@@ -74,12 +74,14 @@ p{
 
     ul.intro-social-buttons > li {
         display: block;
-        margin-bottom: 20px;
+        </**testing size of button**/>
+        margin-bottom: 30px;
         padding: 0;
     }
 
     ul.intro-social-buttons > li:last-child {
         margin-bottom: 0;
+        width: 800px; height : 60px;
     }
 
     .intro-divider {
@@ -92,6 +94,7 @@ p{
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
+    position: relative;
 }
 
 .content-section-a {
