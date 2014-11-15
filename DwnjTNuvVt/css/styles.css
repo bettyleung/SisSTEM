@@ -33,6 +33,9 @@ body {
 .btn-danger,.label-danger,.progress-bar-danger{background-color:#dd4b39;}
 .btn-warning,.label-warning,.progress-bar-warning{background-color:#f4b400;color:#444444;}
 
+body{
+	background: #5baea8
+}
 hr {border-color:#ececec;}
 button {
  outline: 0;
