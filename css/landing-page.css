@@ -31,9 +31,13 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-	background-color:#FFF;
+	background-color:#5baea8;
     /*background: url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;*/
+}
+
+#nav-logo{
+	padding-top:-20px;
 }
 
 .intro-message {
