@@ -43,7 +43,7 @@
   <body>
     <h1> SisSTEM!</h1>
 
-    <form name="submission" action="viewposts.html">
+    <form name="submissionform" action="viewposts.html">
 
     <fieldset>
         <input type="email" class="form-control-2" id="emailid" placeholder="Enter email" name="emailname" >
@@ -60,35 +60,48 @@
   </form>
 
     <script>
-/*      debugger;
+      debugger;
       $("#submitbutton").click(function(event) {
         debugger;
-        event.preventDefault();
+        
+        //storytable is the key in local storage
+        //get the value of storytable
         var nameValue = document.getElementById("usernameid").innerHTML=JSONObject.jname;
         var emailValue = document.getElementById("emailid").innerHTML=JSONObject.jemail;
         var storyValue = document.getElementById("storyid").innerHTML=JSONObject.jStory;
-        myArr = emailValue + " " + storyValue;
-        localStorage.setItem(nameValue,myArr);
-        
-      });*/
+        //myArr = "usernameid:" + nameValue ", " + "storyValue: " + storyValue+"
 
+        //append
 
-        $.fn.serializeObject = function()
-        {
-            var o = {};
-            var a = this.serializeArray();
-            $.each(a, function() {
-                if (o[this.usernameid] !== undefined) {
-                    if (!o[this.usernameid].push) {
-                        o[this.usernameid] = [o[this.usernameid]];
+        var jsonstring = "{"+ "\""+ "storytable"+"\""+":[" + "{"+"\""+"name"+"\""+":" + "\""+ nameValue+"\", "+"\""+"story"+"\""+":"+"\""storyValue + "\"";
+
+        localStorage.setItem("storytable",jsonstring);
+        event.preventDefault();
+    }
+
+ /*     $("#submitbutton").click(function(event) {
+            debugger;
+
+                var o = {};
+                var a = this.serializeArray();
+                $.each(a, function() {
+                    debugger;
+                    if (o[document.getElementById("usernameid")] !== undefined) {
+                        if (!o[document.getElementById("usernameid")].push) {
+                            o[document.getElementById("usernameid")] = [o[document.getElementById("usernameid")]];
+                        }
+                        o[document.getElementById("usernameid")].push(document.getElementById("storyid")|| '');
+                    } else {
+                        o[document.getElementById("usernameid")] = document.getElementById("storyid") || '';
                     }
-                    o[this.usernameid].push(this.storyid || '');
-                } else {
-                    o[this.usernameid] = this.storyid || '';
-                }
-            });
-            return o;
-        };
+                });
+                localStorage.setItem("storytable", o)
+                debugger;
+                event.preventDefault();
+         });
+*/
+
+
     </script>
   </body>
 </html>
