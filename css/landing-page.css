@@ -74,12 +74,14 @@ p{
 
     ul.intro-social-buttons > li {
         display: block;
-        margin-bottom: 20px;
+        </**testing size of button**/>
+        margin-bottom: 30px;
         padding: 0;
     }
 
     ul.intro-social-buttons > li:last-child {
         margin-bottom: 0;
+        width: 800px; height : 60px;
     }
 
     .intro-divider {
@@ -92,6 +94,7 @@ p{
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
+    position: relative;
 }
 
 .content-section-a {
