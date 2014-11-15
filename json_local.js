@@ -11,8 +11,9 @@ $("#submitbutton").click(function () {
        //alert(story.user);
         story.singlestory = $("#storyid").val(); // blank from text ; //create id for storie text 
         //alert(story.singlestory);
+        var stories;
         try{
-            var stories = JSON.parse(localStorage.getItem("stories"));
+            stories = JSON.parse(localStorage.getItem("stories"));
             if (typeof stories !== "object" ) {
              stories = []; 
             }
@@ -27,7 +28,8 @@ $("#submitbutton").click(function () {
     }
     //return false;
 
-    window.location = "viewposts.html";
+   // window.location = "viewposts.html";
+  // window.location = "DwnjTNuvVt/index.html";
 });
 
 /*
