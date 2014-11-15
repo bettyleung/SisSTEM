@@ -2,13 +2,18 @@ h1
 {
 	color: #9e3f3f;
 	text-align: center;
+	padding-top:100px;
 }
 
 legend
 {
-	color: #ebebff;
+	font-family:"Open Sans Condensed", Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	font-size:3em;
+	color: #686868;
 	font-weight: bold;
 	text-align: center;
+	padding-top:50px;
 }
 
 textarea
@@ -32,7 +37,7 @@ input
 	top: 50%;
 	left: 50%;
 	background-color: #215e3f;
-	color: #ebebff;
+	color: #686868;
 }
 
 
@@ -52,7 +57,7 @@ input
 	border-radius: 4px;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 	background-color:#FFF;
-	color: #ebebff;
+	color: #686868;
 }
 
 #story-form{
