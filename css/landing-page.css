@@ -97,7 +97,7 @@ p{
     position: relative;
 }
 
-.content-section-a {
+.content-section-a,.content-section-e {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
@@ -111,6 +111,7 @@ p{
     padding: 50px 0;
     background-color: #f8f8f8;
 }
+
 .section-heading {
     margin-bottom: 30px;
 }
@@ -141,6 +142,10 @@ p{
 .banner-social-buttons {
     float: right;
     margin-top: 0;
+}
+
+.index-img{
+	padding-top:50px;
 }
 
 @media(max-width:1199px) {
