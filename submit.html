@@ -33,6 +33,7 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="pstyle.css">
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 
 
 
@@ -41,7 +42,7 @@
 
 
   <body>
-    <h1> SisSTEM!</h1>
+    <h1><img src="images/logo-small.png" /></h1>
 
     <form name="submissionform" action="viewposts.html">
 
@@ -54,15 +55,18 @@
 
     <fieldset>
         <legend>What's your story?</legend>
-        <textarea name="StorySub" id="storyid" rows="15" cols="80" placeholder="Type here . . ." name="storyname"></textarea>
+<<<<<<< HEAD
+        <div id="story-form"><textarea name="StorySub" id="storyid" rows="15" cols="80" placeholder="Type here . . ." name="storyname"></textarea></div>
+=======
+>>>>>>> 0f454ab8a6bb01afbfa59cadaa4a2dbfa80a7243
     </fieldset>
         <input type="submit" name="submitname" id="submitbutton">
   </form>
 
-    <script>
+    <!-- <script>
       debugger;
       $("#submitbutton").click(function(event) {
-        debugger;
+        //debugger;
         
         //storytable is the key in local storage
         //get the value of storytable
@@ -72,12 +76,14 @@
         //myArr = "usernameid:" + nameValue ", " + "storyValue: " + storyValue+"
 
         //append
-        debugger;
+        //debugger;
 
         var jsonstring = nameValue + emailValue + storyValue;
-        debugger;
-        localStorage.setItem("storytable",jsonstring);
-        event.preventDefault();
+        //debugger;
+        //localStorage.setItem("storytable",jsonstring);
+        //event.preventDefault();
+
+        alert("hello");
     }
 
  /*     $("#submitbutton").click(function(event) {
@@ -100,10 +106,10 @@
                 debugger;
                 event.preventDefault();
          });
-*/
+*/ -->
 
 
-    </script>
+   <script type="text/javascript"  src="./json_local.js"> </script>
   </body>
 </html>
 

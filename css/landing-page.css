@@ -10,20 +10,25 @@ html {
     height: 100%;
 }
 
-body,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: "Open Sans Condensed",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+	text-transform:uppercase;
 }
 
 .lead {
     font-size: 18px;
     font-weight: 400;
+}
+
+p{
+	font-family: "Quicksand",Helvetica,Arial,sans-serif;
+	text-tranform:none;
 }
 
 .intro-header {
@@ -34,10 +39,6 @@ h6 {
 	background-color:#5baea8;
     /*background: url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;*/
-}
-
-#nav-logo{
-	padding-top:-20px;
 }
 
 .intro-message {
@@ -110,16 +111,6 @@ h6 {
     padding: 50px 0;
     background-color: #f8f8f8;
 }
-.content-section-d {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
-.content-section-e {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
 .section-heading {
     margin-bottom: 30px;
 }
