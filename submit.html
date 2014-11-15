@@ -66,15 +66,16 @@
         
         //storytable is the key in local storage
         //get the value of storytable
-        var nameValue = document.getElementById("usernameid").innerHTML=JSONObject.jname;
-        var emailValue = document.getElementById("emailid").innerHTML=JSONObject.jemail;
-        var storyValue = document.getElementById("storyid").innerHTML=JSONObject.jStory;
+        var nameValue = document.getElementById("usernameid");
+        var emailValue = document.getElementById("emailid");
+        var storyValue = document.getElementById("storyid");
         //myArr = "usernameid:" + nameValue ", " + "storyValue: " + storyValue+"
 
         //append
+        debugger;
 
-        var jsonstring = "{"+ "\""+ "storytable"+"\""+":[" + "{"+"\""+"name"+"\""+":" + "\""+ nameValue+"\", "+"\""+"story"+"\""+":"+"\""storyValue + "\"";
-
+        var jsonstring = nameValue + emailValue + storyValue;
+        debugger;
         localStorage.setItem("storytable",jsonstring);
         event.preventDefault();
     }
