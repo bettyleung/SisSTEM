@@ -54,29 +54,42 @@
 
     <fieldset>
         <legend>What's your story?</legend>
-        <textarea name="StorySub" id="Story" rows="15" cols="80" placeholder="Type here . . ." name="storyname"></textarea>
+        <textarea name="StorySub" id="storyid" rows="15" cols="80" placeholder="Type here . . ." name="storyname"></textarea>
     </fieldset>
         <input type="submit" name="submitname" id="submitbutton">
   </form>
 
     <script>
-      debugger;
+/*      debugger;
       $("#submitbutton").click(function(event) {
         debugger;
         event.preventDefault();
-        var nameValue = document.getElementById("usernameid").value;
-        var emailValue = document.getElementById("emailid").value;
-        var storyValue = document.getElementById("Story").value;
+        var nameValue = document.getElementById("usernameid").innerHTML=JSONObject.jname;
+        var emailValue = document.getElementById("emailid").innerHTML=JSONObject.jemail;
+        var storyValue = document.getElementById("storyid").innerHTML=JSONObject.jStory;
         myArr = emailValue + " " + storyValue;
         localStorage.setItem(nameValue,myArr);
         
-      });
+      });*/
+
+
+        $.fn.serializeObject = function()
+        {
+            var o = {};
+            var a = this.serializeArray();
+            $.each(a, function() {
+                if (o[this.usernameid] !== undefined) {
+                    if (!o[this.usernameid].push) {
+                        o[this.usernameid] = [o[this.usernameid]];
+                    }
+                    o[this.usernameid].push(this.storyid || '');
+                } else {
+                    o[this.usernameid] = this.storyid || '';
+                }
+            });
+            return o;
+        };
     </script>
-
-
-
-
-
   </body>
 </html>
 
